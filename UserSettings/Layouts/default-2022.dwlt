@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 2560
     height: 1357.3334
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 38
+  controlID: 39
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 39
+  controlID: 40
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 40
+  controlID: 41
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -274,8 +274,8 @@ MonoBehaviour:
     y: 0
     width: 630
     height: 1307.3334
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
@@ -1481,9 +1481,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -20.636946, y: 3.4635887, z: 36.697853}
+    m_Target: {x: -4.89838, y: 18.83623, z: 58.75921}
     speed: 2
-    m_Value: {x: -20.636946, y: 3.4635887, z: 36.697853}
+    m_Value: {x: -4.89838, y: 18.83623, z: 58.75921}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1529,13 +1529,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.11556467, y: 0.017865181, z: -0.0041838232, w: 0.99373245}
+    m_Target: {x: 0.09203484, y: -0.60122293, z: 0.06752357, w: 0.7916733}
     speed: 2
-    m_Value: {x: 0.11550764, y: 0.014875014, z: -0.0038348183, w: 0.9931878}
+    m_Value: {x: 0.09197758, y: -0.6008489, z: 0.06748156, w: 0.7911808}
   m_Size:
-    m_Target: 29.011944
+    m_Target: 5.1630254
     speed: 2
-    m_Value: 27.762627
+    m_Value: 5.1630254
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1597,10 +1597,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 303.3333}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 7a48eeffa64eeeffceb8f0ffb4ebf4ff4cfcf4ffe256f5ff9e57f5ff1e7bf5ffca7df5ffd07ff5ffb41df9ff36a4f9ffb682feff029cfeff2cfbffffa6fd00006801010084010100f6010100
+      m_ExpandedIDs: 80e3ffff90e3ffffcae9ffff3aecffffacf8ffff04f9ffff26f9ffff14faffffbefaffff14fbffff7a7b0000767c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1670,7 +1670,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1678,16 +1678,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 88
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: 88
   m_LastProjectPath: F:\Repositorios\TSAV_FDP_SALINASLAURA\TSAV-FDP-SALINASLAURA
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 34680000
-    m_LastClickedID: 26676
-    m_ExpandedIDs: 000000003468000086c8000066dd000000ca9a3b
+    m_SelectedIDs: 6e880000
+    m_LastClickedID: 34926
+    m_ExpandedIDs: 000000002c8100002e81000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1715,7 +1715,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000034680000
+    m_ExpandedIDs: 000000002c8100002e810000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1742,7 +1742,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000092730000a86e000000000000ca8900001c8a000074810000347a00001a7a00005e7b0000068f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1878,7 +1878,7 @@ MonoBehaviour:
     x: 476.6667
     y: 72.66667
     width: 1451.3334
-    height: 645.6667
+    height: 693.6667
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1934,22 +1934,22 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 1451.3334
-      height: 624.6667
-    m_Scale: {x: 0.43379632, y: 0.43379632}
-    m_Translation: {x: 725.6667, y: 312.33334}
+      height: 672.6667
+    m_Scale: {x: 0.46712965, y: 0.46712965}
+    m_Translation: {x: 725.6667, y: 336.33334}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1672.8281
+      x: -1553.4589
       y: -720
-      width: 3345.6562
+      width: 3106.9177
       height: 1440
     m_MinimalGUI: 1
-  m_defaultScale: 0.43379632
-  m_LastWindowPixelSize: {x: 2177, y: 968.5}
+  m_defaultScale: 0.46712965
+  m_LastWindowPixelSize: {x: 2177, y: 1040.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
