@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,6 +15,12 @@ public class KeyInteraction : MonoBehaviour
         {
             DestroyKey();
         }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            PerformRaycast();
+        }
+
     }
 
     private bool IsPlayerInInteractionRange()
@@ -41,4 +47,16 @@ public class KeyInteraction : MonoBehaviour
             conditionalColliderToDeactivate.enabled = false;
         }
     }
+
+    void PerformRaycast()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            Debug.Log("llavecita uwu");
+        }
+    }
 }
+

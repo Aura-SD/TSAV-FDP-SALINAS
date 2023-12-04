@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    public float anguloMaximoApertura = 90f; // Ángulo máximo de apertura de la puerta
-    public float velocidadApertura = 2f; // Velocidad de apertura de la puerta
-    public float distanciaMaxima = 3f; // Distancia máxima para interactuar con la puerta
+    public float anguloMaximoApertura = 90f;
+    public float velocidadApertura = 2f;
+    public float distanciaMaxima = 3f;
+    public AudioClip doorSound; // Nuevo AudioClip para el sonido de la puerta
 
     private bool abierta = false;
     private Quaternion rotacionInicial;
     private Quaternion rotacionAbierta;
+    private AudioSource audioSource; // Nuevo AudioSource para reproducir el sonido
 
     void Start()
     {
         rotacionInicial = transform.rotation;
         rotacionAbierta = rotacionInicial * Quaternion.Euler(0, anguloMaximoApertura, 0);
+
+        // Agregar AudioSource al GameObject
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false; // Asegurarse de que no se reproduzca al iniciar
     }
 
     void Update()
@@ -31,6 +37,8 @@ public class DoorController : MonoBehaviour
                         CerrarPuerta();
                     else
                         AbrirPuerta();
+
+                    ReproducirSonidoPuerta(); // Llamar a la función para reproducir el sonido de la puerta
                 }
             }
         }
@@ -55,6 +63,14 @@ public class DoorController : MonoBehaviour
         else
         {
             transform.rotation = Quaternion.Lerp(transform.rotation, rotacionInicial, Time.fixedDeltaTime * velocidadApertura);
+        }
+    }
+
+    void ReproducirSonidoPuerta()
+    {
+        if (doorSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(doorSound); // Reproducir sonido de la puerta
         }
     }
 }
